@@ -1,0 +1,11 @@
+ x_range = 50;
+ y_range = 50;
+ 
+ for(x1=[0:2*x_range]) {
+    for(y1=[0:2*y_range]) {
+        x = x1-x_range;
+        y = y1-y_range;
+        z = (x-5)+(y+10); //write the 3d graph in here
+      translate( [x, y, z] ) sphere(r=1);
+    }
+  }
